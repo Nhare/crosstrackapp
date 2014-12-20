@@ -19,19 +19,19 @@ angular.module('activ8', ['firebase', 'ngRoute'])
     })
     .when('/', {
         templateUrl: 'app/views/main.html'
-
     })
      .when('/new-workout', {
         templateUrl: 'app/views/new-workout.html',
         controller:  'NewWorkoutController',
         controllerAs: 'work',
-
     })
       .when('/history', {
         templateUrl: 'app/views/history.html',
         controller:  'HistoryController',
         controllerAs: 'history',
-
+      })
+      .when('/pr', {
+        templateUrl: 'app/views/pr.html',
       })
      .otherwise({
         redirectTo: '/'
